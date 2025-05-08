@@ -29,8 +29,14 @@ export default function Home() {
                 size="lg"
                 className="uppercase flex items-center gap-2 mb-6 xl:mb-0"
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
+                <a
+                  href="/assets/OskarJanicki.pdf"
+                  download="OskarJanicki.pdf"
+                  className="flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </a>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Socials
