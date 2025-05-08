@@ -34,7 +34,7 @@ const projects = [
       },
       { name: "REST Countries API" },
     ],
-    image: "/assets/work/WyszukajPaństwo.png",
+    image: "/assets/work/WyszukajPanstwo.png",
     live: "https://countries-rest-api-iota.vercel.app/",
     github: "https://github.com/ojoj00/Countries-REST-Api",
   },
