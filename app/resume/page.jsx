@@ -25,7 +25,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "freshman",
+      fieldValue: "Only Students Projects",
     },
     {
       fieldName: "Nationality",
@@ -120,7 +120,7 @@ const Education = {
     {
       institution: "3 Lo Pszczyna",
       degree: "Science",
-      duration: "2016-2018",
+      duration: "2014-2017",
     },
 
     {
