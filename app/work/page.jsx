@@ -162,7 +162,6 @@ const work = () => {
                           src={project.image}
                           fill
                           className="object-contain"
-                          alt="PhotoImage"
                         />
                       </div>
                     </div>
