@@ -30,7 +30,7 @@ const projects = [
       { name: "Html 5" },
       { name: "Css 3" },
       {
-        name: "JavaScript (ES6+)(To mój stary projekt)",
+        name: "JavaScript (ES6+)",
       },
       { name: "REST Countries API" },
     ],
@@ -48,7 +48,7 @@ const projects = [
     stack: [
       { name: "Html 5" },
       { name: "Css 3" },
-      { name: "JavaScript (ES6+)(To mój stary projekt)" },
+      { name: "JavaScript (ES6+)" },
     ],
     image: "/assets/work/memory-game.PNG",
     live: "https://memory-game-chi-blue.vercel.app/",
@@ -64,7 +64,7 @@ const projects = [
     stack: [
       { name: "Html 5" },
       { name: "Css 3" },
-      { name: "JavaScript (ES6+)(To mój stary projekt)" },
+      { name: "JavaScript (ES6+)" },
     ],
     image: "/assets/work/kalkulator-.PNG",
     live: "https://simple-calculator-iota-rosy.vercel.app/",

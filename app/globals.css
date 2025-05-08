@@ -16,7 +16,7 @@
   --color-sidebar-accent: var(--sidebar-accent);
   --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-foreground: var(--sidebar-foregrouncd);
   --color-sidebar: var(--sidebar);
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
@@ -195,6 +195,7 @@
     margin-right: auto;  /* Wyśrodkowanie kontenera */
     padding-left: 15px;  /* Padding 15px z lewej strony */
     padding-right: 15px; /* Padding 15px z prawej strony */
+    max-width:100%;
   }
 }
 
