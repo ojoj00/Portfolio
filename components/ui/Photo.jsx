@@ -26,7 +26,7 @@ const Photo = () => {
             priority
             quality={100}
             fill
-            alt=""
+            alt="Photo"
             className="object-contain rounded-full "
           />
         </motion.div>

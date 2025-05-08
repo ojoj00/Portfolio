@@ -23,10 +23,18 @@ const projects = [
   {
     num: "01",
     category: "fronted",
-    title: "project 1",
-    description: "Jeśli możesz sobie coś wymarzyć, możesz to zrobić.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb1.png",
+    title: "Wyszukiwarka Państw - REST Countries API",
+    description:
+      "Aplikacja umożliwia przeglądanie, filtrowanie i szczegółowe sprawdzanie informacji o państwach z całego świata przy użyciu publicznego API. Projekt został zbudowany w czystym JavaScript z wykorzystaniem fetch() do pobierania danych z REST Countries API.",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3" },
+      {
+        name: "JavaScript (ES6+)(To mój stary projekt)",
+      },
+      { name: "REST Countries API" },
+    ],
+    image: "/assets/work/WyszukajPaństwo.png",
     live: "",
     github: "",
   },
@@ -34,24 +42,33 @@ const projects = [
   {
     num: "02",
     category: "fronted",
-    title: "project 1",
-    description: "Aby przebyć tysiąc mil, trzeba zrobić pierwszy krok.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb2.png",
+    title: "MemoryGame",
+    description:
+      "Memory Game Aplikacja umożliwia zabawę w klasyczne memory game czyli znalezienie 2 takich samych kart",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3" },
+      { name: "JavaScript (ES6+)(To mój stary projekt)" },
+    ],
+    image: "/assets/work/MemoryGame.png",
     live: "",
-    github: "",
+    github: "https://github.com/ojoj00/MemoryGame",
   },
 
   {
     num: "03",
     category: "fronted",
-    title: "project 1",
+    title: "Calculator",
     description:
-      "Talent wygrywa mecze, ale praca zespołowa i inteligencja wygrywają mistrzostwa",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
-    image: "/assets/work/thumb3.png",
+      "Kalkulator aplikacja ta pozwala na wykonanie podstawowych działań matematycznych ",
+    stack: [
+      { name: "Html 5" },
+      { name: "Css 3" },
+      { name: "JavaScript (ES6+)(To mój stary projekt)" },
+    ],
+    image: "/assets/work/Kalkulator.png",
     live: "",
-    github: "",
+    github: "https://github.com/ojoj00/SimpleCalculator",
   },
 ];
 
@@ -73,10 +90,6 @@ const work = () => {
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
-        <p className="text-sm text-white/50 mb-6 italic">
-          Testowa zakładka w celu pokazania umiejętności zaniedługo będzie tu
-          więcej rzeczy :)
-        </p>
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
@@ -84,13 +97,16 @@ const work = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                Project: {project.title}
               </h2>
               <p className="text-white/60">{project.description}</p>
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => {
                   return (
-                    <li key={index} className="text-xl text-accent">
+                    <li
+                      key={index}
+                      className="text-xl text-accent whitespace-nowrap"
+                    >
                       {item.name}
                       {/*remove the last coma*/}
                       {index !== project.stack.length - 1 && ","}
@@ -114,7 +130,7 @@ const work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
-                <Link href={project.github}>
+                <a href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white5 flex justify-center items-center group">
@@ -125,7 +141,7 @@ const work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -145,7 +161,8 @@ const work = () => {
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-contain"
+                          alt="PhotoImage"
                         />
                       </div>
                     </div>
