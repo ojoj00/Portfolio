@@ -35,8 +35,8 @@ const projects = [
       { name: "REST Countries API" },
     ],
     image: "/assets/work/WyszukajPaństwo.png",
-    live: "",
-    github: "",
+    live: "https://countries-rest-api-iota.vercel.app/",
+    github: "https://github.com/ojoj00/Countries-REST-Api",
   },
 
   {
@@ -51,7 +51,7 @@ const projects = [
       { name: "JavaScript (ES6+)(To mój stary projekt)" },
     ],
     image: "/assets/work/MemoryGame.png",
-    live: "",
+    live: "https://memory-game-chi-blue.vercel.app/",
     github: "https://github.com/ojoj00/MemoryGame",
   },
 
@@ -67,7 +67,7 @@ const projects = [
       { name: "JavaScript (ES6+)(To mój stary projekt)" },
     ],
     image: "/assets/work/Kalkulator.png",
-    live: "",
+    live: "https://simple-calculator-iota-rosy.vercel.app/",
     github: "https://github.com/ojoj00/SimpleCalculator",
   },
 ];
@@ -118,23 +118,23 @@ const work = () => {
               <div className="border border-white/20"></div>
 
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
+                <a href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent cursor-pointer" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Live project</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </a>
                 <a href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white5 flex justify-center items-center group">
-                        <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                        <BsGithub className="text-white text-3xl group-hover:text-accent cursor-pointer" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Github Repository</p>
@@ -172,7 +172,7 @@ const work = () => {
               <WorkSliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-25 z-20 
               w-full justify-between xl:w-max xl:justify-none"
-                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all cursor-pointer"
               />
             </Swiper>
           </div>
